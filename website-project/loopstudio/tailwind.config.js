@@ -2,7 +2,21 @@
 module.exports = {
   content: ['./*.html'],
   theme: {
-    extend: {},
+    screens:{
+      sm:'480px',
+      md:'768px',
+      lg:'976px',
+      xl:'1440px',
+    },
+    extend: {
+      fontFamily: {
+        sans: ['Josefin Sans', 'san-serif'],
+        alata: ['Alata'],
+      },
+      letterSpacing: {
+        widest: '.3em',
+      }
+    },
   },
   plugins: [],
 }
